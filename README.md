@@ -25,7 +25,7 @@ activity-ranking-tests/
     ├── package.json                ← Dependencies & npm scripts
     ├── tsconfig.json               ← TypeScript compiler settings
     ├── cucumber.js                 ← Cucumber runner config
-    ├── features/                   ← (symlink or copy of bdd-scenarios.feature for the runner)
+    ├── features/                   ← (The same bdd-scenarios.feature for the runner)
     ├── mocks/
     │   └── mock-data.ts            ← All test fixtures and city response stubs
     ├── step-definitions/
