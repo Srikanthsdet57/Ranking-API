@@ -1,0 +1,30 @@
+{
+  "name": "activity-ranking-api-tests",
+  "version": "1.0.0",
+  "description": "BDD automated tests for the Activity Ranking API with weather forecast integration",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "test:happy-path": "cucumber-js --tags @happy-path",
+    "test:contract": "cucumber-js --tags @contract",
+    "test:autocomplete": "cucumber-js --tags @autocomplete",
+    "test:error-handling": "cucumber-js --tags @error-handling",
+    "test:resilience": "cucumber-js --tags @resilience",
+    "test:performance": "cucumber-js --tags @performance",
+    "test:ci": "cucumber-js --tags 'not @mocked' --format json:reports/cucumber-report.json",
+    "test:report": "cucumber-js --format html:reports/cucumber-report.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@types/chai": "^4.3.11",
+    "@types/node": "^20.11.5",
+    "@types/sinon": "^17.0.3",
+    "axios": "^1.6.5",
+    "chai": "^4.4.1",
+    "nock": "^13.5.0",
+    "sinon": "^17.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
